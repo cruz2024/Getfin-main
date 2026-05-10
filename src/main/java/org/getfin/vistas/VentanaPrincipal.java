@@ -11,6 +11,9 @@ public class VentanaPrincipal extends JFrame {
     public VentanaPrincipal() {
         initComponents();
         configurarMenu();
+
+        /** Aqui para cargar mi sistema en el dashborad */
+        cargarPanel(new DashboardVista());
     }
 
     private void initComponents() {
@@ -54,6 +57,7 @@ public class VentanaPrincipal extends JFrame {
     private void configurarMenu() {
         barraopciones.setOpcionSeleccionadaListener(opcion -> {
             switch (opcion) {
+                case "Dashboard" -> cargarPanel(new DashboardVista());
                 case "Visita" -> cargarPanel(new VisitaVista());
                 case "Inventario" -> cargarPanel(new ProductoVista());
                 case "Cultivo" -> cargarPanel(new CultivoVista());

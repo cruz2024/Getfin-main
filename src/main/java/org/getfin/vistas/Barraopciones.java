@@ -14,7 +14,7 @@ public class Barraopciones extends JPanel {
 
     private static final Logger logger = Logger.getLogger(Barraopciones.class.getName());
     private OpcionSeleccionadaListener listener;
-    private Color colorFondo = new Color(12, 55, 15);
+    private Color colorFondo = new Color(32, 89, 32);
     private Color colorHover = new Color(30, 80, 30);
     private Color colorTexto = Color.WHITE;
     private Font fuenteTexto = new Font("Bahnschrift", Font.BOLD, 12);
